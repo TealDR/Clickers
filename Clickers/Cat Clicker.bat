@@ -18,6 +18,7 @@ echo The current cost to increase CP by 1 is %cpcost%. Type Buy and press Enter 
 echo Type Buy2 to buy CP2 which increases CP gained per purchase. You have %cp2% CP2. It costs %cpcost2% to upgrade CP2.
 set /p input= 
 if %input%==Buy goto 3
+if %input%==Buy2 goto 5
 if %input%==a set /a cats=%cats% + %cp%
 goto save
 goto 1
