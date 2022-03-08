@@ -19,6 +19,8 @@ set /p input=
 if %input%==Buy goto 3
 if %input%==Buy2 goto 5
 if %input%==a set /a glizzys=%glizzys% + %gp1%
+if %input%==reset goto reset
+if %input%==Reset goto reset
 goto save
 
 
@@ -63,6 +65,14 @@ echo %gpcost2%
 )>GlizzyClickerSave.dlb
 goto 1
 
+:reset
+(
+echo 0
+echo 1
+echo 1
+echo 50
+echo 250
+)>GlizzyClickerSave.dlb
 :load
 (
 set /p glizzys=
