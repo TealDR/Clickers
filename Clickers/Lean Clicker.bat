@@ -33,7 +33,7 @@ cls
 goto 1
 
 :4
-set /a lp1=%lp1% + 1
+set /a lp1=%lp1% + %lp2%
 set /a lean=%lean% - %lpcost1%
 set /a lpcost1=%lpcost1% * 2
 cls
