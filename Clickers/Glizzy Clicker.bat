@@ -73,6 +73,8 @@ echo 1
 echo 50
 echo 250
 )>GlizzyClickerSave.dlb
+goto load
+
 :load
 (
 set /p glizzys=
