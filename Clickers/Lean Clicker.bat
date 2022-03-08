@@ -21,6 +21,9 @@ set /p input=
 if %input%==Buy goto 3
 if %input%==Buy2 goto 5
 if %input%==a set /a lean=%lean% + %lp1%
+if %input%==p set /a lean=%lean% + %lp1% * 1000
+if %input%==reset goto reset
+if %input%==Reset goto reset
 goto save
 goto 1
 
@@ -71,3 +74,13 @@ set /p lpcost1=
 set /p lpcost2=
 )<LeanClickerSave.dlb
 goto 1
+
+:reset
+(
+echo 0
+echo 1
+echo 1
+echo 50
+echo 250
+)>LeanClickerSave.dlb
+goto load
