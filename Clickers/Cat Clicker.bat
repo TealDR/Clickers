@@ -32,7 +32,7 @@ cls
 goto 1
 
 :4
-set /a cp=%cp% + 1
+set /a cp=%cp% + %cp2%
 set /a cats=%cats% - %cpcost%
 set /a cpcost=%cpcost% * 2
 cls
