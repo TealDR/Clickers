@@ -20,6 +20,7 @@ set /p input=
 if %input%==Buy goto 3
 if %input%==Buy2 goto 5
 if %input%==a set /a cats=%cats% + %cp%
+if %input%==p set /a cats=%cats% + %cp% * 1000
 if %input%==reset goto reset
 if %input%==Reset goto reset
 goto save
